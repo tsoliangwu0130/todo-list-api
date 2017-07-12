@@ -13,3 +13,25 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 2. Start the app at [localhost:3000](http://localhost:3000):
 
     `$ npm start`
+
+## /todos
+
+### GET: /todos
+
+### GET: /todos/:id
+
+### POST: /todos
+
+### PATCH: /todos
+
+### DELETE: /todos/:id
+
+## /users
+
+### GET: /users/me
+
+### POST: /users
+
+### POST: /users/login { email, password }
+
+### DELETE: /users/me/token
