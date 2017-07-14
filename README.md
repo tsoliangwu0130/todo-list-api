@@ -59,4 +59,29 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU
 
 ### POST /users/login
 
+```
+POST /users/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "tsoliangwu0130@gmail.com",
+  "password": "password!"
+}
+```
+
+```
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 69
+Date: Fri, 14 Jul 2017 19:43:46 GMT
+ETag: W/"45-dUoPLW+UATlB6Fe/8Qblx7oi9CY"
+X-Powered-By: Express
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYxNDI2fQ.P7FAUrarx_DWHmNs68weR4Y27_5afuoeDztVRY_GDAg
+
+{
+    "_id": "59691c802d821ba1557b73e7",
+    "email": "tsoliangwu0130@gmail.com"
+}
+```
+
 ### DELETE /users/me/token
