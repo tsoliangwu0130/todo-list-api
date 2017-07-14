@@ -133,7 +133,7 @@ app.post('/users', async (req, res) => {
     }
 });
 
-// POST: /users/login { email, password }
+// POST: /users/login
 app.post('/users/login', async (req, res) => {
     try {
         const body = _.pick(req.body, ['email', 'password']);
