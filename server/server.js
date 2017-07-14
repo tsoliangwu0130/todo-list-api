@@ -18,7 +18,7 @@ const port = process.env.PORT;
 // middleware
 app.use(bodyParser.json());
 
-// GET: /todos
+// GET /todos
 app.get('/todos', authenticate, (req, res) => {
     Todo.find({
         _creator: req.user._id
@@ -29,7 +29,7 @@ app.get('/todos', authenticate, (req, res) => {
     });
 });
 
-// GET: /todos/:id
+// GET /todos/:id
 app.get('/todos/:id', authenticate, (req, res) => {
     var id = req.params.id;
 
@@ -50,7 +50,7 @@ app.get('/todos/:id', authenticate, (req, res) => {
     });
 });
 
-// POST: /todos
+// POST /todos
 app.post('/todos', authenticate, (req, res) => {
     var todo = new Todo({
         text: req.body.text,
@@ -65,7 +65,7 @@ app.post('/todos', authenticate, (req, res) => {
     });
 });
 
-// PATCH: /todos
+// PATCH /todos
 app.patch('/todos/:id', authenticate, (req, res) => {
     var id = req.params.id;
     var body = _.pick(req.body, ['text', 'completed']); // only pick the properties which we want user to update
@@ -92,7 +92,7 @@ app.patch('/todos/:id', authenticate, (req, res) => {
     });
 });
 
-// DELETE: /todos/:id
+// DELETE /todos/:id
 app.delete('/todos/:id', authenticate, async (req, res) => {
     const id = req.params.id;
 
@@ -115,12 +115,12 @@ app.delete('/todos/:id', authenticate, async (req, res) => {
     }
 });
 
-// GET: /users/me
+// GET /users/me
 app.get('/users/me', authenticate, (req, res) => {
     res.send(req.user);
 });
 
-// POST: /users
+// POST /users
 app.post('/users', async (req, res) => {
     try {
         const body = _.pick(req.body, ['email', 'password']);
@@ -133,7 +133,7 @@ app.post('/users', async (req, res) => {
     }
 });
 
-// POST: /users/login
+// POST /users/login
 app.post('/users/login', async (req, res) => {
     try {
         const body = _.pick(req.body, ['email', 'password']);
@@ -145,7 +145,7 @@ app.post('/users/login', async (req, res) => {
     }
 });
 
-// DELETE: /users/me/token
+// DELETE /users/me/token
 app.delete('/users/me/token', authenticate, async (req, res) => {
     try {
         await req.user.removeToken(req.token);
