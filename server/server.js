@@ -65,7 +65,7 @@ app.post('/todos', authenticate, (req, res) => {
     });
 });
 
-// PATCH /todos
+// PATCH /todos/:id
 app.patch('/todos/:id', authenticate, (req, res) => {
     var id = req.params.id;
     var body = _.pick(req.body, ['text', 'completed']); // only pick the properties which we want user to update
