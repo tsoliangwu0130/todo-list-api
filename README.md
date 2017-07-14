@@ -32,6 +32,18 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 
 ### POST: /users
 
+```
+> POST /users HTTP/1.1
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "_id": "596915cc2d821ba1557b73e0",
+    "email": "tsoliangwu0130@gmail.com"
+}
+```
+
 ### POST: /users/login { email, password }
 
 ### DELETE: /users/me/token
