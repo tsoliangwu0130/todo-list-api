@@ -30,44 +30,32 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 
 ### GET: /users/me
 
-```
-> GET /users/me HTTP/1.1
-
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "_id": "596915cc2d821ba1557b73e0",
-    "email": "tsoliangwu0130@gmail.com"
-}
-```
-
 ### POST: /users
 
 ```
-> POST /users HTTP/1.1
-
-HTTP/1.1 200 OK
-Content-Type: application/json
+POST /users HTTP/1.1
 
 {
-    "_id": "596915cc2d821ba1557b73e0",
+  "email": "tsoliangwu0130@gmail.com",
+  "password": "password!"
+}
+```
+
+```
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 69
+Date: Fri, 14 Jul 2017 19:33:20 GMT
+ETag: W/"45-dUoPLW+UATlB6Fe/8Qblx7oi9CY"
+X-Powered-By: Express
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
+
+{
+    "_id": "59691c802d821ba1557b73e7",
     "email": "tsoliangwu0130@gmail.com"
 }
 ```
 
 ### POST: /users/login
-
-```
-> POST /users/login HTTP/1.1
-
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "_id": "596915cc2d821ba1557b73e0",
-    "email": "tsoliangwu0130@gmail.com"
-}
-```
 
 ### DELETE: /users/me/token
