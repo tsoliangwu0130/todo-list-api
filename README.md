@@ -30,6 +30,26 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 
 ### GET /users/me
 
+```
+GET /users/me HTTP/1.1
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYxNDI2fQ.P7FAUrarx_DWHmNs68weR4Y27_5afuoeDztVRY_GDAg
+```
+
+```
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 69
+Content-Type: application/json; charset=utf-8
+Date: Fri, 14 Jul 2017 19:46:50 GMT
+ETag: W/"45-dUoPLW+UATlB6Fe/8Qblx7oi9CY"
+X-Powered-By: Express
+
+{
+    "_id": "59691c802d821ba1557b73e7",
+    "email": "tsoliangwu0130@gmail.com"
+}
+```
+
 ### POST /users
 
 ```
@@ -46,6 +66,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Length: 69
+Content-Type: application/json; charset=utf-8
 Date: Fri, 14 Jul 2017 19:33:20 GMT
 ETag: W/"45-dUoPLW+UATlB6Fe/8Qblx7oi9CY"
 X-Powered-By: Express
@@ -73,6 +94,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Length: 69
+Content-Type: application/json; charset=utf-8
 Date: Fri, 14 Jul 2017 19:43:46 GMT
 ETag: W/"45-dUoPLW+UATlB6Fe/8Qblx7oi9CY"
 X-Powered-By: Express
