@@ -22,6 +22,35 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 
 ### POST /todos
 
+```
+POST /todos HTTP/1.1
+Content-Type: application/json
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
+
+{
+  "text": "Something to do from Postman"
+}
+```
+
+```
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 155
+Content-Type: application/json; charset=utf-8
+Date: Fri, 14 Jul 2017 19:54:47 GMT
+ETag: W/"9b-/Cw9g9LnPK/vccqDh4CDbsKF6/g"
+X-Powered-By: Express
+
+{
+    "__v": 0,
+    "text": "Something to do from Postman",
+    "_creator": "59691c802d821ba1557b73e7",
+    "_id": "596921872d821ba1557b73ea",
+    "completedAt": null,
+    "completed": false
+}
+```
+
 ### PATCH /todos
 
 ### DELETE /todos/:id
