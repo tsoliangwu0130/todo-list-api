@@ -44,6 +44,18 @@ Content-Type: application/json
 }
 ```
 
-### POST: /users/login { email, password }
+### POST: /users/login
+
+```
+> POST /users/login HTTP/1.1
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "_id": "596915cc2d821ba1557b73e0",
+    "email": "tsoliangwu0130@gmail.com"
+}
+```
 
 ### DELETE: /users/me/token
