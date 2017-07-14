@@ -56,6 +56,31 @@ X-Powered-By: Express
 
 ### GET /todos/:id
 
+```
+GET /todos/:id HTTP/1.1
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
+```
+
+```
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 164
+Content-Type: application/json; charset=utf-8
+Date: Fri, 14 Jul 2017 20:01:44 GMT
+ETag: W/"a4-DaODaXXlg9LzU2j5ykmjVxLzdQs"
+X-Powered-By: Express
+
+"todo": {
+    "_id": "596921872d821ba1557b73ea",
+    "text": "Something to do from Postman",
+    "_creator": "59691c802d821ba1557b73e7",
+    "__v": 0,
+    "completedAt": null,
+    "completed": false
+}
+}
+```
+
 ### POST /todos
 
 ```
