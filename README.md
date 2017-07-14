@@ -78,7 +78,6 @@ X-Powered-By: Express
     "completedAt": null,
     "completed": false
 }
-}
 ```
 
 ### POST /todos
