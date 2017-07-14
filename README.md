@@ -57,7 +57,7 @@ X-Powered-By: Express
 ### GET /todos/:id
 
 ```
-GET /todos/:id HTTP/1.1
+GET /todos/596921872d821ba1557b73ea HTTP/1.1
 x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
 ```
 
@@ -111,7 +111,33 @@ X-Powered-By: Express
 }
 ```
 
-### PATCH /todos
+### PATCH /todos/:id
+
+```
+PATCH /todos/596921872d821ba1557b73ea HTTP/1.1
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
+```
+
+```
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 171
+Content-Type: application/json; charset=utf-8
+Date: Fri, 14 Jul 2017 20:05:01 GMT
+ETag: W/"ab-BNMBZIQUdHOHuFYjlMapv2Aln0g"
+X-Powered-By: Express
+
+{
+    "todo": {
+        "_id": "596921872d821ba1557b73ea",
+        "text": "Update something to do from Postman",
+        "_creator": "59691c802d821ba1557b73e7",
+        "__v": 0,
+        "completedAt": null,
+        "completed": false
+    }
+}
+```
 
 ### DELETE /todos/:id
 
