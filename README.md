@@ -107,3 +107,16 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU
 ```
 
 ### DELETE /users/me/token
+
+```
+DELETE /users/me/token HTTP/1.1
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYxNDI2fQ.P7FAUrarx_DWHmNs68weR4Y27_5afuoeDztVRY_GDAg
+```
+
+```
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 0
+Date: Fri, 14 Jul 2017 19:50:57 GMT
+X-Powered-By: Express
+```
