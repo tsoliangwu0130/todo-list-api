@@ -16,24 +16,25 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 
 ## /todos
 
-### GET: /todos
+### GET /todos
 
-### GET: /todos/:id
+### GET /todos/:id
 
-### POST: /todos
+### POST /todos
 
-### PATCH: /todos
+### PATCH /todos
 
-### DELETE: /todos/:id
+### DELETE /todos/:id
 
 ## /users
 
-### GET: /users/me
+### GET /users/me
 
-### POST: /users
+### POST /users
 
 ```
 POST /users HTTP/1.1
+Content-Type: application/json
 
 {
   "email": "tsoliangwu0130@gmail.com",
@@ -56,6 +57,6 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU
 }
 ```
 
-### POST: /users/login
+### POST /users/login
 
-### DELETE: /users/me/token
+### DELETE /users/me/token
