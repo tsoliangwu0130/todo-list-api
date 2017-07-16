@@ -16,7 +16,9 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 
 ## Resources
 
-### GET /todos
+### todos
+
+#### GET /todos
 
 ```
 GET /todos HTTP/1.1
@@ -54,7 +56,7 @@ X-Powered-By: Express
 }
 ```
 
-### GET /todos/:id
+#### GET /todos/:id
 
 ```
 GET /todos/596921872d821ba1557b73ea HTTP/1.1
@@ -80,7 +82,7 @@ X-Powered-By: Express
 }
 ```
 
-### POST /todos
+#### POST /todos
 
 ```
 POST /todos HTTP/1.1
@@ -111,7 +113,7 @@ X-Powered-By: Express
 }
 ```
 
-### PATCH /todos/:id
+#### PATCH /todos/:id
 
 ```
 PATCH /todos/596921872d821ba1557b73ea HTTP/1.1
@@ -139,7 +141,7 @@ X-Powered-By: Express
 }
 ```
 
-### DELETE /todos/:id
+#### DELETE /todos/:id
 
 ```
 DELETE /todos/596921872d821ba1557b73ea HTTP/1.1
@@ -167,7 +169,9 @@ X-Powered-By: Express
 }
 ```
 
-### GET /users/me
+### users
+
+#### GET /users/me
 
 ```
 GET /users/me HTTP/1.1
@@ -189,7 +193,7 @@ X-Powered-By: Express
 }
 ```
 
-### POST /users
+#### POST /users
 
 ```
 POST /users HTTP/1.1
@@ -217,7 +221,7 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU
 }
 ```
 
-### POST /users/login
+#### POST /users/login
 
 ```
 POST /users/login HTTP/1.1
@@ -245,7 +249,7 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU
 }
 ```
 
-### DELETE /users/me/token
+#### DELETE /users/me/token
 
 ```
 DELETE /users/me/token HTTP/1.1
