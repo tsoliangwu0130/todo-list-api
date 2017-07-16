@@ -117,7 +117,12 @@ X-Powered-By: Express
 
 ```
 PATCH /todos/596921872d821ba1557b73ea HTTP/1.1
+Content-Type: application/json
 x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
+
+{
+  "text": "Update something to do from Postman"
+}
 ```
 
 ```
