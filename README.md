@@ -41,13 +41,17 @@ You'll also need to create a `config.json` file to setup the environment and pla
 
 ### Usage
 
-1. To install app dependencies, simply:
+To install app dependencies, simply run:
 
-    `$ npm install`
+```
+$ npm install
+```
 
-2. Start the app at [localhost:3000](http://localhost:3000):
+Start the app at [localhost:3000](http://localhost:3000):
 
-    `$ npm start`
+```
+$ npm start
+```
 
 ## Resources
 
