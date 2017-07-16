@@ -14,7 +14,7 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 
     `$ npm start`
 
-## /todos
+## Resources
 
 ### GET /todos
 
@@ -166,8 +166,6 @@ X-Powered-By: Express
     }
 }
 ```
-
-## /users
 
 ### GET /users/me
 
