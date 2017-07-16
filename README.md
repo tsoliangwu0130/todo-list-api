@@ -20,6 +20,25 @@ Then run MongoDB with [mongod](https://docs.mongodb.com/manual/reference/program
 $ mongod --dbpath ~/data/db
 ```
 
+#### Configuration
+
+You'll also need to create a `config.json` file to setup the environment and place it under `server/config/`. The following is a simple example of `config.json`:
+
+```json
+{
+  "test": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/TodoAppTest",
+    "JWT_SECRET": "jwtsecret"
+  },
+  "development": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/TodoApp",
+    "JWT_SECRET": "jwtsecret"
+  }
+}
+```
+
 ### Usage
 
 1. To install app dependencies, simply:
