@@ -8,7 +8,7 @@ A [Node.js](https://nodejs.org/en/) to-do list RESTful API which supports CRUD o
 
 #### MongoDB
 
-You'll need to run [MongoDB](https://www.mongodb.com/) on your machine in order to support CRUD operations for this API. Simply install MongoDB use:
+You'll need to run [MongoDB](https://www.mongodb.com/) on your machine in order to support CRUD operations for this API. Simply install MongoDB with [Homebrew](https://brew.sh/):
 
 ```
 $ brew install mongodb
