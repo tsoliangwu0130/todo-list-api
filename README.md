@@ -51,6 +51,14 @@ Start the app at [localhost:3000](http://localhost:3000):
 $ npm start
 ```
 
+## Docker Compose
+
+You can also run this app in [Docker](https://www.docker.com/) containers with [Docker Compose](https://docs.docker.com/compose/). To do so, just ensure you have `docker` and `docker-compose` installed and have the `config.json` file prepared, then simply run:
+
+```
+$ docker-compose up
+```
+
 ## Resources
 
 ### todos
