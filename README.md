@@ -67,6 +67,8 @@ The following sections are all supported operations for todos resource.
 
 #### GET /todos
 
+Retrieve all todos for the same user with `x-auth` token.
+
 ```
 GET /todos HTTP/1.1
 x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
@@ -105,6 +107,8 @@ X-Powered-By: Express
 
 #### GET /todos/:id
 
+Retrieve one specific todo with todo's unique ID and `x-auth` token.
+
 ```
 GET /todos/596921872d821ba1557b73ea HTTP/1.1
 x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
@@ -130,6 +134,8 @@ X-Powered-By: Express
 ```
 
 #### POST /todos
+
+Create a new todo with `x-auth` token.
 
 ```
 POST /todos HTTP/1.1
@@ -161,6 +167,8 @@ X-Powered-By: Express
 ```
 
 #### PATCH /todos/:id
+
+Update an existed todo with `x-auth` token.
 
 ```
 PATCH /todos/596921872d821ba1557b73ea HTTP/1.1
@@ -195,6 +203,8 @@ X-Powered-By: Express
 
 #### DELETE /todos/:id
 
+Delete an existed todo with `x-auth` token.
+
 ```
 DELETE /todos/596921872d821ba1557b73ea HTTP/1.1
 x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU3YjczZTciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTAwMDYwODAwfQ.af2PQl2HMduHU3FeXFMjxTShO97l1QYAclvweh5lBsc
@@ -223,9 +233,11 @@ X-Powered-By: Express
 
 ### users
 
-The following sections are all supported operations for users resource. 
+The following sections are all supported operations for users resource.
 
 #### GET /users/me
+
+Retrieve user information with `x-auth` token.
 
 ```
 GET /users/me HTTP/1.1
@@ -248,6 +260,8 @@ X-Powered-By: Express
 ```
 
 #### POST /users
+
+Create a new user and login.
 
 ```
 POST /users HTTP/1.1
@@ -277,6 +291,8 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU
 
 #### POST /users/login
 
+Login an existed user with email and password.
+
 ```
 POST /users/login HTTP/1.1
 Content-Type: application/json
@@ -304,6 +320,8 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OTY5MWM4MDJkODIxYmExNTU
 ```
 
 #### DELETE /users/me/token
+
+Log out the current user with `x-auth` token.
 
 ```
 DELETE /users/me/token HTTP/1.1
