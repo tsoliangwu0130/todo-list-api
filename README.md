@@ -63,6 +63,8 @@ $ docker-compose up
 
 ### todos
 
+The following sections are all supported operations for todos resource.
+
 #### GET /todos
 
 ```
@@ -220,6 +222,8 @@ X-Powered-By: Express
 ```
 
 ### users
+
+The following sections are all supported operations for users resource. 
 
 #### GET /users/me
 
