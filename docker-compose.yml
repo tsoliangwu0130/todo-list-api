@@ -1,0 +1,14 @@
+version: "2"
+services:
+  web:
+    build: .
+    volumes:
+      - ./server/config/config.json:/usr/src/todo-list-api/server/config/config.json:ro
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+        - "27017:27017"
